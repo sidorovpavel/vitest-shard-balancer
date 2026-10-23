@@ -2,7 +2,10 @@
 
 [![npm](https://img.shields.io/npm/v/vitest-shard-balancer)](https://www.npmjs.com/package/vitest-shard-balancer)
 [![CI](https://github.com/sidorovpavel/vitest-shard-balancer/actions/workflows/ci.yml/badge.svg)](https://github.com/sidorovpavel/vitest-shard-balancer/actions/workflows/ci.yml)
-[![license](https://img.shields.io/npm/l/vitest-shard-balancer)](./LICENSE)
+[![downloads](https://img.shields.io/npm/dm/vitest-shard-balancer)](https://www.npmjs.com/package/vitest-shard-balancer)
+[![node](https://img.shields.io/node/v/vitest-shard-balancer)](https://www.npmjs.com/package/vitest-shard-balancer)
+[![types](https://img.shields.io/npm/types/vitest-shard-balancer)](https://www.npmjs.com/package/vitest-shard-balancer)
+[![license](https://img.shields.io/github/license/sidorovpavel/vitest-shard-balancer)](./LICENSE)
 
 **Timing-based test splitting for Vitest.** Balance `vitest --shard` runs by how long each test
 file actually takes, so parallel CI jobs finish at the same time — instead of Vitest's default
