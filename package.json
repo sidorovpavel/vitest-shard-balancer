@@ -1,6 +1,6 @@
 {
   "name": "vitest-shard-balancer",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Balance Vitest --shard runs by measured test file durations: timing-based test splitting for parallel CI, instead of Vitest's split by path hash.",
   "keywords": [
     "vitest",
