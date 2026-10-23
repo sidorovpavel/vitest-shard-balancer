@@ -1,0 +1,68 @@
+{
+  "name": "vitest-shard-balancer",
+  "version": "0.0.0",
+  "description": "Balance Vitest --shard runs by measured test file durations: timing-based test splitting for parallel CI, instead of Vitest's split by path hash.",
+  "keywords": [
+    "vitest",
+    "vitest-sequencer",
+    "vitest-reporter",
+    "shard",
+    "sharding",
+    "test-sharding",
+    "test-splitting",
+    "split-tests",
+    "timings",
+    "duration",
+    "load-balancing",
+    "parallel",
+    "ci",
+    "github-actions",
+    "knapsack"
+  ],
+  "homepage": "https://github.com/sidorovpavel/vitest-shard-balancer#readme",
+  "bugs": {
+    "url": "https://github.com/sidorovpavel/vitest-shard-balancer/issues"
+  },
+  "license": "MIT",
+  "author": "Pavel Sidorov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidorovpavel/vitest-shard-balancer.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": "^22.12.0 || >=24.0.0"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "biome check --write .",
+    "lint": "biome ci .",
+    "lint:package": "publint && attw --pack --profile esm-only",
+    "prepack": "pnpm build"
+  },
+  "peerDependencies": {
+    "vitest": ">=3.2.0"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.18.5",
+    "@biomejs/biome": "2.6.2",
+    "@types/node": "^24.19.2",
+    "publint": "0.3.25",
+    "typescript": "7.0.2",
+    "vitest": "5.0.5"
+  }
+}
